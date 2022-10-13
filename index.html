@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+ 
+</head>
+<body>
+    <div class = question>
+        <button onclick="test()">문제 3</button>
+        <p id="test_obj"></p>
+         
+        <script>
+            var i = 0;
+            var txt = '컴퓨터는 2진법을 사용합니다. 2진법은 0과 1로만 숫자를 표시합니다 가장 높은 숫자가 1이다. 그렇다면은 10진법의 가장 높은 숫자는 무엇일까?';
+            var speed = 100;
+         
+            function test() {
+                if (i < txt.length) {
+                    document.getElementById("test_obj").innerHTML += txt.charAt(i); //    https://ihanpark.github.io/p5/
+                    i++;
+                    setTimeout(test, speed);
+                }
+            }
+        </script>
+    </div>
+</body>
